@@ -11,7 +11,7 @@ jobs:
       - name: Send new issue to Discord
         uses: Ilshidur/action-discord@master
         with:
-          webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
+          webhook_url: ${{ secrets.BUGS_WEBHOOK }}
           message: |
             🐞 **New Bug Report Submitted**
             📌 **Repository**: ${{ github.repository }}
